@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakti Menanga | Data Analyst & Developer</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2A9D8F;
+            --secondary: #264653;
+            --accent: #E9C46A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: var(--secondary);
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Cover Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+            background: linear-gradient(45deg, var(--secondary), #1a2a33);
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .name {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Sections Common Styles */
+        .section {
+            padding: 5rem 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary);
+        }
+
+        /* Timeline Layout */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            padding: 2rem;
+            background: rgba(255,255,255,0.05);
+            margin: 2rem 0;
+            border-radius: 10px;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background: rgba(255,255,255,0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .skill-icon {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        /* Projects Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        /* Contact Section */
+        .cta-section {
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 2rem;
+            transition: transform 0.3s;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .name {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .timeline-item {
+                padding: 1.5rem;
+            }
+
+            .project-card, .skill-card {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 1rem;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline" data-aos="fade-up">Turning Data into Strategic Advantage</p>
+            <h1 class="name" data-aos="fade-up" data-aos-delay="200">Bakti Menanga</h1>
+            <p class="bio" data-aos="fade-up" data-aos-delay="400">
+                Software Developer | Data Analyst | System Optimizer
+            </p>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="section" id="about">
+        <div class="timeline">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="timeline-item" data-aos="fade-up">
+                <p>7+ years experience in software development transitioning to data analytics. Specialized in creating high-performance systems and actionable data insights.</p>
+                <ul class="skills-list" data-aos="fade-up">
+                    <li>🚀 1M+ user web application developer</li>
+                    <li>📈 95% accuracy predictive models</li>
+                    <li>💡 40% process improvement expert</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+        <div class="timeline">
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>RevoU - Full-stack Data Analytics</h3>
+                <p>Sep 2024 - Jan 2025 | Score: 93.9/100</p>
+                <p>Mastered Python, SQL, Tableau, and statistical modeling</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>Telkom University - Bachelor of Informatics</h3>
+                <p>2013-2018 | GPA: 3.53/4.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+        <div class="timeline">
+            <h2 class="section-title" data-aos="fade-up">Experience</h2>
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>Software Developer @ Telkomsigma</h3>
+                <p>2019-Present</p>
+                <ul>
+                    <li>Reduced system latency by 25%</li>
+                    <li>Automated monitoring scripts</li>
+                </ul>
+            </div>
+            <!-- Add other experiences -->
+        </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section class="section" id="skills">
+        <div class="timeline">
+            <h2 class="section-title" data-aos="fade-up">Skills & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>Technical</h3>
+                    <p>Python, SQL, Node.js, Tableau</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-tools skill-icon"></i>
+                    <h3>Tools</h3>
+                    <p>Git, Jupyter, Power BI, Agile</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-comments skill-icon"></i>
+                    <h3>Soft Skills</h3>
+                    <p>Data Storytelling, Data Visualization, Team Leadership</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="section" id="projects">
+        <div class="timeline">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card" data-aos="zoom-in">
+                    <h3>Sales Forecasting Model</h3>
+                    <p>95% accuracy prediction model</p>
+                    <p>Python, Tableau, XGBoost</p>
+                </div>
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <h3>Web App Optimization</h3>
+                    <p>25% query efficiency improvement</p>
+                    <p>Node.js, SQL, Indexing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <h2 class="section-title" data-aos="fade-up">Let's Connect!</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Ready to turn data into action?</p>
+        <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+            <a href="mailto:bakti.menanga@gmail.com" class="cta-button">
+                <i class="fas fa-envelope"></i> Email Me
+            </a>
+            <a href="https://www.linkedin.com/in/bakti-menanga" class="cta-button" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
